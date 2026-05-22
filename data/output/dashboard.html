@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CNPJ Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3"></script>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif; background: #f5f5f5; padding: 20px; }
+        .container { max-width: 1200px; margin: 0 auto; background: white; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); padding: 30px; }
+        h1 { color: #333; margin-bottom: 10px; }
+        .subtitle { color: #666; font-size: 14px; margin-bottom: 30px; }
+        .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 15px; margin-bottom: 40px; }
+        .card { background: linear-gradient(135deg, #007bff 0%, #0056b3 100%); color: white; padding: 20px; border-radius: 8px; text-align: center; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .card:nth-child(2) { background: linear-gradient(135deg, #28a745 0%, #1e7e34 100%); }
+        .card:nth-child(3) { background: linear-gradient(135deg, #ffc107 0%, #cc9a00 100%); }
+        .card:nth-child(4) { background: linear-gradient(135deg, #17a2b8 0%, #117a8b 100%); }
+        .card h3 { font-size: 13px; opacity: 0.95; margin-bottom: 10px; font-weight: 600; }
+        .card .value { font-size: 36px; font-weight: bold; margin: 0; }
+        .sections { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; margin-bottom: 40px; }
+        .section-title { font-size: 18px; font-weight: bold; color: #333; margin-bottom: 15px; }
+        table { width: 100%; border-collapse: collapse; }
+        th, td { padding: 12px; text-align: left; border-bottom: 1px solid #ddd; }
+        th { background: #f9f9f9; font-weight: 600; color: #333; }
+        tr:hover { background: #f5f5f5; }
+        .footer { text-align: center; margin-top: 40px; padding-top: 20px; border-top: 1px solid #ddd; color: #999; font-size: 13px; }
+        @media (max-width: 768px) {
+            .sections { grid-template-columns: 1fr; }
+            .cards { grid-template-columns: repeat(2, 1fr); }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>CNPJ Consultation Dashboard</h1>
+        <div class="subtitle">Gerado em 21/05/2026 22:06:46 | Tempo de processamento: 0.3s</div>
+        
+        <div class="cards">
+            <div class="card"><h3>Total de Registros</h3><div class="value">105</div></div>
+            <div class="card"><h3>CNPJs Unicos</h3><div class="value">105</div></div>
+            <div class="card"><h3>% Ativas</h3><div class="value">98.1%</div></div>
+            <div class="card"><h3>Com Socios</h3><div class="value">52</div></div>
+        </div>
+        
+        <div class="sections">
+            <div>
+                <div class="section-title">Situacao Cadastral</div>
+                <canvas id="situacaoChart"></canvas>
+            </div>
+            <div>
+                <div class="section-title">Distribuicao de Porte</div>
+                <canvas id="porteChart"></canvas>
+            </div>
+        </div>
+        
+        <div>
+            <div class="section-title">Top 10 Empresas Mais Recentes</div>
+            <table>
+                <tr><th>Data</th><th>Razao Social</th><th>CNPJ</th><th>Bairro</th><th>Situacao</th></tr>
+                <tr><td>12/05/2026</td><td>LUCIENE RODRIGUES 96157763191</td><td>15280561000169</td><td>CAPUAVA</td><td>INAPTA</td></tr>
+                <tr><td>12/05/2026</td><td>ALVES VIDAL MOVEIS ELETRODOMESTICOS LTDA</td><td>3070546000107</td><td>JD NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>EMPORIO E DISTRIBUIDORA A DIRETORIA LTDA</td><td>64414622000149</td><td>JD NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>A R COSTA 2 LTDA</td><td>48562907000170</td><td>JD NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>ARK AUTO VIDROS LTDA</td><td>7274690000116</td><td>JD NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>EXCLUSIVA LOCACAO E DECORACAO LTDA</td><td>55333145000104</td><td>JD NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>MAIS CENTRO AUTOMOTIVO LTDA</td><td>52261829000141</td><td>JD NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>55029745 ANA BEATRIZ REGIS DA COSTA</td><td>55029745000175</td><td>JARDIM FONTE NOVA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>ELISVALDA MARTINS DE ARAUJO 00772200130</td><td>29237543000109</td><td>JARDIM NOVA ESPERANCA</td><td>ATIVA</td></tr>
+                <tr><td>12/05/2026</td><td>CLAUDEMIR DA SILVA SAMPAIO 99360349100</td><td>36601122000180</td><td>SAO CARLOS</td><td>ATIVA</td></tr>
+            </table>
+        </div>
+        
+        <div class="footer">Relatorio gerado automaticamente pelo CNPJ Consultation System</div>
+    </div>
+    
+    <script>
+        const situacaoCtx = document.getElementById('situacaoChart').getContext('2d');
+        new Chart(situacaoCtx, {
+            type: 'doughnut',
+            data: {
+                labels: ["ATIVA", "INAPTA"],
+                datasets: [{
+                    data: [103, 2],
+                    backgroundColor: ['#28a745', '#dc3545', '#ffc107', '#17a2b8', '#6c757d'],
+                    borderColor: '#fff',
+                    borderWidth: 2
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                plugins: {
+                    legend: { position: 'bottom', labels: { padding: 15, font: { size: 12 } } }
+                }
+            }
+        });
+        
+        const porteCtx = document.getElementById('porteChart').getContext('2d');
+        new Chart(porteCtx, {
+            type: 'bar',
+            data: {
+                labels: ["ME", "EPP"],
+                datasets: [{
+                    label: 'Quantidade',
+                    data: [96, 9],
+                    backgroundColor: '#007bff',
+                    borderColor: '#0056b3',
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                maintainAspectRatio: true,
+                indexAxis: 'y',
+                plugins: {
+                    legend: { display: true, labels: { font: { size: 12 } } }
+                },
+                scales: {
+                    x: { beginAtZero: true, ticks: { stepSize: 1 } }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
+    

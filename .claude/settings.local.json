@@ -21,7 +21,11 @@
       "Bash(python run_notebook.py)",
       "Bash(Remove-Item *)",
       "Bash(python test_async.py)",
-      "Bash(pip install *)"
+      "Bash(pip install *)",
+      "Bash(python -m pytest tests/test_cnpj.py -v --tb=short)",
+      "Bash(python cli.py --help)",
+      "Bash(python cli.py --concurrent 3)",
+      "Bash(python)"
     ]
   }
 }

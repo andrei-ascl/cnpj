@@ -52,3 +52,249 @@
 2026-05-21 21:45:48 [INFO] Arquivos gerados:
 2026-05-21 21:45:48 [INFO]   1. Completo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado.xlsx
 2026-05-21 21:45:48 [INFO]   2. Resumido: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 21:59:16 [INFO] Config: input=data\input\pesquisa_cnpj.xlsx, concurrent=3, format=lista_nomes
+2026-05-21 21:59:16 [INFO] Lendo arquivo: data\input\pesquisa_cnpj.xlsx
+2026-05-21 21:59:16 [INFO] VALIDACAO DO ARQUIVO DE ENTRADA
+2026-05-21 21:59:16 [INFO]   Total de linhas: 105
+2026-05-21 21:59:16 [INFO]   CNPJs preenchidos: 105
+2026-05-21 21:59:16 [INFO]   CNPJs vazios: 0
+2026-05-21 21:59:16 [INFO]   Colunas encontradas: 15
+2026-05-21 21:59:16 [INFO] LIMPEZA E VALIDACAO DE CNPJs
+2026-05-21 21:59:16 [INFO]   CNPJs originais: 105
+2026-05-21 21:59:16 [INFO]   CNPJs preenchidos: 105
+2026-05-21 21:59:16 [INFO]   CNPJs validos apos limpeza: 105
+2026-05-21 21:59:16 [INFO]   CNPJs descartados (invalidos): 0
+2026-05-21 21:59:16 [INFO]   CNPJs duplicados removidos: 0
+2026-05-21 21:59:16 [INFO]   CNPJs validos unicos: 105
+2026-05-21 21:59:16 [INFO] STATUS DO CACHE
+2026-05-21 21:59:16 [INFO]   CNPJs em cache valido: 105 (100.0%)
+2026-05-21 21:59:16 [INFO]   CNPJs a consultar: 0
+2026-05-21 21:59:16 [INFO] Todos os CNPJs ja estao em cache valido!
+2026-05-21 21:59:16 [INFO] Aplicando resultados ao DataFrame...
+2026-05-21 21:59:16 [INFO] Ordenando por data de atendimento...
+2026-05-21 21:59:16 [INFO] Arquivo completo salvo: data\output\pesquisa_cnpj_resultado.xlsx
+2026-05-21 21:59:16 [INFO] RELATORIO FINAL DE PROCESSAMENTO
+2026-05-21 21:59:16 [INFO]   Total de registros: 105
+2026-05-21 21:59:16 [INFO]   CNPJs unicos: 105
+2026-05-21 21:59:16 [INFO]   Com data de abertura: 105
+2026-05-21 21:59:16 [INFO]   Com situacao cadastral: 105
+2026-05-21 21:59:16 [INFO]   Empresas ATIVAS: 103 (98.1%)
+2026-05-21 21:59:16 [INFO]   Com socios: 52
+2026-05-21 21:59:16 [INFO]   Com bairro: 105
+2026-05-21 21:59:16 [INFO]   Com setor (CNAE): 105
+2026-05-21 21:59:16 [INFO]   Com porte: 105
+2026-05-21 21:59:16 [INFO] DISTRIBUICAO - Situacao Cadastral
+2026-05-21 21:59:16 [INFO]   ATIVA: 103 (98.1%)
+2026-05-21 21:59:16 [INFO]   INAPTA: 2 (1.9%)
+2026-05-21 21:59:16 [INFO] DISTRIBUICAO - Porte
+2026-05-21 21:59:16 [INFO]   ME: 96 (91.4%)
+2026-05-21 21:59:16 [INFO]   EPP: 9 (8.6%)
+2026-05-21 21:59:16 [INFO] Sem falhas detectadas!
+2026-05-21 21:59:16 [INFO] GERANDO ARQUIVO RESUMIDO
+2026-05-21 21:59:16 [INFO] Arquivo resumido - preenchimento por coluna
+2026-05-21 21:59:16 [INFO]   dataAtendimento     : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   razaoSocial         : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   nomeFantasia        : 74/105 (70.5%)
+2026-05-21 21:59:16 [INFO]   cnpj                : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   Bairro              : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   Porte               : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   AnoFundacao         : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   IdadeEmpresa        : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   SituacaoDesc        : 105/105 (100.0%)
+2026-05-21 21:59:16 [INFO]   Socios              : 52/105 (49.5%)
+2026-05-21 21:59:16 [INFO] Arquivo resumido salvo: data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 21:59:16 [INFO] PROCESSAMENTO CONCLUIDO COM SUCESSO!
+2026-05-21 21:59:16 [INFO] Arquivos gerados:
+2026-05-21 21:59:16 [INFO]   1. Completo: data\output\pesquisa_cnpj_resultado.xlsx
+2026-05-21 21:59:16 [INFO]   2. Resumido: data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 22:03:34 [INFO] Lendo arquivo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\input\pesquisa_cnpj.xlsx
+2026-05-21 22:03:34 [INFO] VALIDACAO DO ARQUIVO DE ENTRADA
+2026-05-21 22:03:34 [INFO]   Total de linhas: 105
+2026-05-21 22:03:34 [INFO]   CNPJs preenchidos: 105
+2026-05-21 22:03:34 [INFO]   CNPJs vazios: 0
+2026-05-21 22:03:34 [INFO]   Colunas encontradas: 15
+2026-05-21 22:03:34 [INFO] LIMPEZA E VALIDACAO DE CNPJs
+2026-05-21 22:03:34 [INFO]   CNPJs originais: 105
+2026-05-21 22:03:34 [INFO]   CNPJs preenchidos: 105
+2026-05-21 22:03:34 [INFO]   CNPJs validos apos limpeza: 105
+2026-05-21 22:03:34 [INFO]   CNPJs descartados (invalidos): 0
+2026-05-21 22:03:34 [INFO]   CNPJs duplicados removidos: 0
+2026-05-21 22:03:34 [INFO]   CNPJs validos unicos: 105
+2026-05-21 22:03:34 [WARNING] Cache: 105 entrada(s) em formato antigo, serao reprocessadas
+2026-05-21 22:03:34 [INFO] STATUS DO CACHE
+2026-05-21 22:03:34 [INFO]   CNPJs em cache valido: 105 (100.0%)
+2026-05-21 22:03:34 [INFO]   CNPJs a consultar: 0
+2026-05-21 22:03:34 [INFO] Todos os CNPJs ja estao em cache valido!
+2026-05-21 22:03:34 [INFO] Aplicando resultados ao DataFrame...
+2026-05-21 22:03:34 [INFO] Ordenando por data de atendimento...
+2026-05-21 22:03:35 [INFO] Arquivo completo salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado.xlsx
+2026-05-21 22:03:35 [INFO] RELATORIO FINAL DE PROCESSAMENTO
+2026-05-21 22:03:35 [INFO]   Total de registros: 105
+2026-05-21 22:03:35 [INFO]   CNPJs unicos: 105
+2026-05-21 22:03:35 [INFO]   Com data de abertura: 105
+2026-05-21 22:03:35 [INFO]   Com situacao cadastral: 105
+2026-05-21 22:03:35 [INFO]   Empresas ATIVAS: 103 (98.1%)
+2026-05-21 22:03:35 [INFO]   Com socios: 52
+2026-05-21 22:03:35 [INFO]   Com bairro: 105
+2026-05-21 22:03:35 [INFO]   Com setor (CNAE): 105
+2026-05-21 22:03:35 [INFO]   Com porte: 105
+2026-05-21 22:03:35 [INFO] DISTRIBUICAO - Situacao Cadastral
+2026-05-21 22:03:35 [INFO]   ATIVA: 103 (98.1%)
+2026-05-21 22:03:35 [INFO]   INAPTA: 2 (1.9%)
+2026-05-21 22:03:35 [INFO] DISTRIBUICAO - Porte
+2026-05-21 22:03:35 [INFO]   ME: 96 (91.4%)
+2026-05-21 22:03:35 [INFO]   EPP: 9 (8.6%)
+2026-05-21 22:03:35 [INFO] Sem falhas detectadas!
+2026-05-21 22:03:35 [INFO] GERANDO ARQUIVO RESUMIDO
+2026-05-21 22:03:35 [INFO] Arquivo resumido - preenchimento por coluna
+2026-05-21 22:03:35 [INFO]   dataAtendimento     : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   razaoSocial         : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   nomeFantasia        : 74/105 (70.5%)
+2026-05-21 22:03:35 [INFO]   cnpj                : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   Bairro              : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   Porte               : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   AnoFundacao         : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   IdadeEmpresa        : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   SituacaoDesc        : 105/105 (100.0%)
+2026-05-21 22:03:35 [INFO]   Socios              : 52/105 (49.5%)
+2026-05-21 22:03:35 [INFO] Arquivo resumido salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 22:03:35 [INFO] GERANDO DASHBOARD HTML
+2026-05-21 22:03:35 [ERROR] Erro inesperado: TypeError: Column 'dataAtendimento' has dtype object, cannot use method 'nlargest' with this dtype
+Traceback (most recent call last):
+  File "<string>", line 1034, in main
+  File "<string>", line 664, in gerar_dashboard
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\core\frame.py", line 7666, in nlargest
+    return selectn.SelectNFrame(self, n=n, keep=keep, columns=columns).nlargest()
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\core\methods\selectn.py", line 57, in nlargest
+    return self.compute("nlargest")
+           ~~~~~~~~~~~~^^^^^^^^^^^^
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\site-packages\pandas\core\methods\selectn.py", line 201, in compute
+    raise TypeError(
+    ...<2 lines>...
+    )
+TypeError: Column 'dataAtendimento' has dtype object, cannot use method 'nlargest' with this dtype
+2026-05-21 22:05:08 [INFO] Lendo arquivo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\input\pesquisa_cnpj.xlsx
+2026-05-21 22:05:09 [INFO] VALIDACAO DO ARQUIVO DE ENTRADA
+2026-05-21 22:05:09 [INFO]   Total de linhas: 105
+2026-05-21 22:05:09 [INFO]   CNPJs preenchidos: 105
+2026-05-21 22:05:09 [INFO]   CNPJs vazios: 0
+2026-05-21 22:05:09 [INFO]   Colunas encontradas: 15
+2026-05-21 22:05:09 [INFO] LIMPEZA E VALIDACAO DE CNPJs
+2026-05-21 22:05:09 [INFO]   CNPJs originais: 105
+2026-05-21 22:05:09 [INFO]   CNPJs preenchidos: 105
+2026-05-21 22:05:09 [INFO]   CNPJs validos apos limpeza: 105
+2026-05-21 22:05:09 [INFO]   CNPJs descartados (invalidos): 0
+2026-05-21 22:05:09 [INFO]   CNPJs duplicados removidos: 0
+2026-05-21 22:05:09 [INFO]   CNPJs validos unicos: 105
+2026-05-21 22:05:09 [INFO] STATUS DO CACHE
+2026-05-21 22:05:09 [INFO]   CNPJs em cache valido: 105 (100.0%)
+2026-05-21 22:05:09 [INFO]   CNPJs a consultar: 0
+2026-05-21 22:05:09 [INFO] Todos os CNPJs ja estao em cache valido!
+2026-05-21 22:05:09 [INFO] Aplicando resultados ao DataFrame...
+2026-05-21 22:05:09 [INFO] Ordenando por data de atendimento...
+2026-05-21 22:05:09 [INFO] Arquivo completo salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado.xlsx
+2026-05-21 22:05:09 [INFO] RELATORIO FINAL DE PROCESSAMENTO
+2026-05-21 22:05:09 [INFO]   Total de registros: 105
+2026-05-21 22:05:09 [INFO]   CNPJs unicos: 105
+2026-05-21 22:05:09 [INFO]   Com data de abertura: 105
+2026-05-21 22:05:09 [INFO]   Com situacao cadastral: 105
+2026-05-21 22:05:09 [INFO]   Empresas ATIVAS: 103 (98.1%)
+2026-05-21 22:05:09 [INFO]   Com socios: 52
+2026-05-21 22:05:09 [INFO]   Com bairro: 105
+2026-05-21 22:05:09 [INFO]   Com setor (CNAE): 105
+2026-05-21 22:05:09 [INFO]   Com porte: 105
+2026-05-21 22:05:09 [INFO] DISTRIBUICAO - Situacao Cadastral
+2026-05-21 22:05:09 [INFO]   ATIVA: 103 (98.1%)
+2026-05-21 22:05:09 [INFO]   INAPTA: 2 (1.9%)
+2026-05-21 22:05:09 [INFO] DISTRIBUICAO - Porte
+2026-05-21 22:05:09 [INFO]   ME: 96 (91.4%)
+2026-05-21 22:05:09 [INFO]   EPP: 9 (8.6%)
+2026-05-21 22:05:09 [INFO] Sem falhas detectadas!
+2026-05-21 22:05:09 [INFO] GERANDO ARQUIVO RESUMIDO
+2026-05-21 22:05:09 [INFO] Arquivo resumido - preenchimento por coluna
+2026-05-21 22:05:09 [INFO]   dataAtendimento     : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   razaoSocial         : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   nomeFantasia        : 74/105 (70.5%)
+2026-05-21 22:05:09 [INFO]   cnpj                : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   Bairro              : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   Porte               : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   AnoFundacao         : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   IdadeEmpresa        : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   SituacaoDesc        : 105/105 (100.0%)
+2026-05-21 22:05:09 [INFO]   Socios              : 52/105 (49.5%)
+2026-05-21 22:05:09 [INFO] Arquivo resumido salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 22:05:09 [INFO] GERANDO DASHBOARD HTML
+2026-05-21 22:05:09 [ERROR] Erro inesperado: TypeError: Object of type int64 is not JSON serializable
+Traceback (most recent call last):
+  File "<string>", line 1036, in main
+  File "<string>", line 762, in gerar_dashboard
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\json\__init__.py", line 235, in dumps
+    return _default_encoder.encode(obj)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\json\encoder.py", line 202, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\json\encoder.py", line 263, in iterencode
+    return _iterencode(o, 0)
+  File "C:\Users\andre\AppData\Local\Programs\Python\Python314\Lib\json\encoder.py", line 182, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+                    f'is not JSON serializable')
+TypeError: Object of type int64 is not JSON serializable
+when serializing list item 0
+2026-05-21 22:06:46 [INFO] Lendo arquivo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\input\pesquisa_cnpj.xlsx
+2026-05-21 22:06:46 [INFO] VALIDACAO DO ARQUIVO DE ENTRADA
+2026-05-21 22:06:46 [INFO]   Total de linhas: 105
+2026-05-21 22:06:46 [INFO]   CNPJs preenchidos: 105
+2026-05-21 22:06:46 [INFO]   CNPJs vazios: 0
+2026-05-21 22:06:46 [INFO]   Colunas encontradas: 15
+2026-05-21 22:06:46 [INFO] LIMPEZA E VALIDACAO DE CNPJs
+2026-05-21 22:06:46 [INFO]   CNPJs originais: 105
+2026-05-21 22:06:46 [INFO]   CNPJs preenchidos: 105
+2026-05-21 22:06:46 [INFO]   CNPJs validos apos limpeza: 105
+2026-05-21 22:06:46 [INFO]   CNPJs descartados (invalidos): 0
+2026-05-21 22:06:46 [INFO]   CNPJs duplicados removidos: 0
+2026-05-21 22:06:46 [INFO]   CNPJs validos unicos: 105
+2026-05-21 22:06:46 [INFO] STATUS DO CACHE
+2026-05-21 22:06:46 [INFO]   CNPJs em cache valido: 105 (100.0%)
+2026-05-21 22:06:46 [INFO]   CNPJs a consultar: 0
+2026-05-21 22:06:46 [INFO] Todos os CNPJs ja estao em cache valido!
+2026-05-21 22:06:46 [INFO] Aplicando resultados ao DataFrame...
+2026-05-21 22:06:46 [INFO] Ordenando por data de atendimento...
+2026-05-21 22:06:46 [INFO] Arquivo completo salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado.xlsx
+2026-05-21 22:06:46 [INFO] RELATORIO FINAL DE PROCESSAMENTO
+2026-05-21 22:06:46 [INFO]   Total de registros: 105
+2026-05-21 22:06:46 [INFO]   CNPJs unicos: 105
+2026-05-21 22:06:46 [INFO]   Com data de abertura: 105
+2026-05-21 22:06:46 [INFO]   Com situacao cadastral: 105
+2026-05-21 22:06:46 [INFO]   Empresas ATIVAS: 103 (98.1%)
+2026-05-21 22:06:46 [INFO]   Com socios: 52
+2026-05-21 22:06:46 [INFO]   Com bairro: 105
+2026-05-21 22:06:46 [INFO]   Com setor (CNAE): 105
+2026-05-21 22:06:46 [INFO]   Com porte: 105
+2026-05-21 22:06:46 [INFO] DISTRIBUICAO - Situacao Cadastral
+2026-05-21 22:06:46 [INFO]   ATIVA: 103 (98.1%)
+2026-05-21 22:06:46 [INFO]   INAPTA: 2 (1.9%)
+2026-05-21 22:06:46 [INFO] DISTRIBUICAO - Porte
+2026-05-21 22:06:46 [INFO]   ME: 96 (91.4%)
+2026-05-21 22:06:46 [INFO]   EPP: 9 (8.6%)
+2026-05-21 22:06:46 [INFO] Sem falhas detectadas!
+2026-05-21 22:06:46 [INFO] GERANDO ARQUIVO RESUMIDO
+2026-05-21 22:06:46 [INFO] Arquivo resumido - preenchimento por coluna
+2026-05-21 22:06:46 [INFO]   dataAtendimento     : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   razaoSocial         : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   nomeFantasia        : 74/105 (70.5%)
+2026-05-21 22:06:46 [INFO]   cnpj                : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   Bairro              : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   Porte               : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   AnoFundacao         : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   IdadeEmpresa        : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   SituacaoDesc        : 105/105 (100.0%)
+2026-05-21 22:06:46 [INFO]   Socios              : 52/105 (49.5%)
+2026-05-21 22:06:46 [INFO] Arquivo resumido salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 22:06:46 [INFO] GERANDO DASHBOARD HTML
+2026-05-21 22:06:46 [INFO] Dashboard salvo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\dashboard.html
+2026-05-21 22:06:46 [INFO] PROCESSAMENTO CONCLUIDO COM SUCESSO!
+2026-05-21 22:06:46 [INFO] Arquivos gerados:
+2026-05-21 22:06:46 [INFO]   1. Completo: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado.xlsx
+2026-05-21 22:06:46 [INFO]   2. Resumido: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\pesquisa_cnpj_resultado_RESUMIDO.xlsx
+2026-05-21 22:06:46 [INFO]   3. Dashboard: C:\Users\andre\OneDrive\Flow\PythonScripts\cnpj\data\output\dashboard.html
