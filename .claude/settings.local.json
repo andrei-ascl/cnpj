@@ -15,7 +15,11 @@
       "Bash(Get-ChildItem -Path C:\\\\Users\\\\andre\\\\OneDrive\\\\Flow\\\\PythonScripts\\\\cnpj -Recurse -File)",
       "Bash(Select-Object FullName)",
       "Bash(python3 *)",
-      "mcp__ide__executeCode"
+      "mcp__ide__executeCode",
+      "Bash(python consulta-cnpj-lista-porte_revisado.ipynb)",
+      "Bash(python run_corrected.py)",
+      "Bash(python run_notebook.py)",
+      "Bash(Remove-Item *)"
     ]
   }
 }
