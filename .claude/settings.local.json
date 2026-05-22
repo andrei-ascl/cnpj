@@ -19,7 +19,9 @@
       "Bash(python consulta-cnpj-lista-porte_revisado.ipynb)",
       "Bash(python run_corrected.py)",
       "Bash(python run_notebook.py)",
-      "Bash(Remove-Item *)"
+      "Bash(Remove-Item *)",
+      "Bash(python test_async.py)",
+      "Bash(pip install *)"
     ]
   }
 }
