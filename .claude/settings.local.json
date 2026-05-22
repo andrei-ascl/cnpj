@@ -2,7 +2,20 @@
   "permissions": {
     "allow": [
       "Bash(git add *)",
-      "Bash(git commit *)"
+      "Bash(git commit *)",
+      "Bash(git remote *)",
+      "Bash(git push *)",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.claude\" -ErrorAction SilentlyContinue)",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.claude\\\\frameworks\" -ErrorAction SilentlyContinue)",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.claude\\\\skills\" -ErrorAction SilentlyContinue | Select-Object Name)",
+      "PowerShell(Copy-Item *)",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.claude\\\\skills\\\\skill-creator\")",
+      "PowerShell(ls \"$env:USERPROFILE\\\\.claude\\\\skills\\\\code-review-checklist\")",
+      "Bash(python3)",
+      "Bash(Get-ChildItem -Path C:\\\\Users\\\\andre\\\\OneDrive\\\\Flow\\\\PythonScripts\\\\cnpj -Recurse -File)",
+      "Bash(Select-Object FullName)",
+      "Bash(python3 *)",
+      "mcp__ide__executeCode"
     ]
   }
 }
